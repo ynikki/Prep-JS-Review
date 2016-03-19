@@ -165,6 +165,16 @@ console.log(colorMeBadd);
 This function will take two parameters and returns the result of adding two numbers together.
 Store this value in a variable named sum and console log this variable.*/
 
+var dog = 3;
+var cat = 4;
+
+function add(n1,n2){
+  return n1 + n2;
+}
+
+var sum  = add(dog,cat);
+console.log(sum);
+
 /*13.  Declare a function named subtract. 
 This function will take two parameters and returns the result of subtracting two numbers together. 
 Store this value in a variable named difference and console log this variable.*/
