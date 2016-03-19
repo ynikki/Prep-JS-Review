@@ -1,4 +1,4 @@
-/*Hey Prepstars!  By now, you should have a good understanding of the basics of Javascript.
+ /*Hey Prepstars!  By now, you should have a good understanding of the basics of Javascript.
 The following exericese will be a good review of the materials we covered in class:
 
 Don't forget to commit and push your work after each completed exercise.
@@ -264,10 +264,32 @@ minimum legal drinking age in Antigua.
 Invoke this function by passing in a number value.  Google search Antigua's minimum drinking age to confirm the number value.  
 Store the return value to a variable named drinkinAlready and console log this variable*/
 
+function oldEnough(age){
+  if(age === 18){
+    return true;
+    }else{
+      return false;
+  }
+}
+
+var drinkinAlready =  oldEnough();
+console.log(drinkinAlready);
+
+
 /*21. Declare a function named fightDaPower.
 This function checks the value stored at the drinkinAlready variable in the previous exercise and if the value is true, return 
 the string "I'm jumping on the next flight to Antigua." Otherwise return the string "I can't wait to be in the 5th grade!"  
 Console log the result.*/ 
+
+function fightDaPower(flight){
+  if(drinkinAlready === true){
+    return "I'm jumping on the next flight to Antigua.";
+  }else{
+    return "I can't wait to be in the 5th grade!";
+  }
+}
+
+console.log(fightDaPower(drinkinAlready));
 
 /*22. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop 
 that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in 
