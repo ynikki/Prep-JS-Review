@@ -20,8 +20,8 @@ console.log(teacherName);
 /*2. Variable with a Number as their value.
 Declare variables named numberOfFloorsBurjKhalifa, TokyoOlympicsYear.  Console log each variable.*/
 
-var numberOfFloorsBurjKhalifa = [1,2,3,4];
-var TokyoOlympicsYear = [11,12];
+var numberOfFloorsBurjKhalifa = [163];
+var TokyoOlympicsYear = [2020];
 
 console.log(numberOfFloorsBurjKhalifa);
 console.log(TokyoOlympicsYear); 
@@ -87,6 +87,15 @@ console.log(india);
     checkIn => null
 
  console log the object*/
+
+ var hotel={
+  name:"Hilton",
+  rooms:200,
+  pool:true,
+  checkIn: null,
+ };
+
+console.log(hotel);
 
 /*9.  Declare a literal object named "car" with properties and values set to:
 
