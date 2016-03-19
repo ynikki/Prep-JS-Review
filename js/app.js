@@ -146,6 +146,19 @@ var bigBox = {};
 
 console log the object */ 
 
+
+var colorMeBadd = {
+  iro:["literal object"],
+  akai:'red',
+  aoi:'blue',
+  midori:'green',
+  shiroi:'white',
+  pinku:'pink',
+  murasaki:'purple',
+};
+
+console.log(colorMeBadd);
+
 /*For exercises #12 - 14, declare two variables, one named "dog" and the other named "cat".  Assign a number value for each variable.*/
 
 /*12.  Declare a function named add.
