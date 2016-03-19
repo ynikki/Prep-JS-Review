@@ -295,8 +295,29 @@ console.log(fightDaPower(drinkinAlready));
 that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in 
 exercise 10.  Console log the result.*/
 
+function contentFiller(){
+  for(var i=0; i<20; i++){
+    bigBox.contents.push([i]);
+  }
+  return bigBox.size;
+}
+
+console.log(contentFiller([i])); 
+
 /*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string 
 parameter being passed in and return the string in reverse order.*/
+
+function firstReverse(str){
+  for(var i=0; i<str.length; i++){
+    console.log(str[i]);{
+      str.reverse();
+      console.log(str[i]);
+    }
+  }
+  return str;
+}
+
+firstReverse(planets);
 
 /*24.  Using DOM, create the follow HTML layout:
 
@@ -311,3 +332,37 @@ parameter being passed in and return the string in reverse order.*/
   </span>
 </div>    
 */
+
+window.onload=function(){
+
+var firstDiv = document.createElement('div');
+firstDiv.id = "dessert";
+
+var firstSpan = document.createElement('span');
+firstSpan.id = "cakes";
+
+var firstPara = document.createElement('para');
+var chocolateText = document.createTextNode('chocolate');
+
+firstPara.appendChild(chocolateText);
+firstSpan.appendChild(firstDiv);
+firstDiv.appendChild(firstSpan);
+
+document.body.appendChild(firstDiv);
+
+var secondDiv = document.createElement('div');
+secondDiv.id = "drinks";
+
+var secondSpan = document.createElement('span');
+secondSpan.id = "juice";
+
+var secondPara = document.createElement('para');
+var koolaidText = document.createTextNode("kool-aid");
+
+secondPara.appendChild(koolaidText);
+secondSpan.appendChild(secondPara);
+secondDiv.appendChild(secondSpan);
+
+document.body.appendChild(secondDiv);
+
+};
