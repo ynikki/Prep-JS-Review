@@ -75,6 +75,10 @@ console.log(planets[7]);
 Declare a variable named india and assign the value of 3 popular tourist attractions.  
 Console log the variable.*/
 
+var india = ["Jaisalmer","Varansai","Taj Mahal"];
+
+console.log(india);
+
 /*8.  Declare a literal object named "hotel" with properties and values set to:
 
     name    => "Hilton"
