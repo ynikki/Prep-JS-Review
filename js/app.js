@@ -210,33 +210,71 @@ function dunkinDonuts(doughnuts){
 console.log(dunkinDonuts(sum));
 
 /*16.  Declare a function named stayinClassy.
-This function will access the values store in the difference and product variables and uses these numbers to return the string "Yea, I drank X gallons of box wine and ate Y bags of Cheetos and still feel vibrant yo!"  X is the value stored at difference variable and Y is the value stored at product variable. Console.log the result.*/
+This function will access the values store in the difference and product variables and uses these numbers to return 
+the string "Yea, I drank X gallons of box wine and ate Y bags of Cheetos and still feel vibrant yo!"  X is the value 
+stored at difference variable and Y is the value stored at product variable. Console.log the result.*/
+
+function stayinClassy(){
+  return "Yea, I drank " + difference + " gallons of box wine and ate " + product + " bags of Cheetos and still feel vibrant yo!";
+}
+
+console.log(stayinClassy(difference,product));
 
 /*17.  Declare a function named watMyName, which takes two parameters firstName and lastName.
 This function will return a string "My name is...firstName lastName."
 Invoke this function by passing in the string values of "Slim", "Shady". and console log the result.
 */
 
-/*18. Using the japanPrefectures array you created in exercise 5, create a for loop that iterates through this array and console logs the following message:
+function watMyName(firstName,lastName){
+  return "My name is.... " + firstName + " " + lastName;
+}
+
+console.log(watMyName("Slim","Shady"));
+
+
+/*18. Using the japanPrefectures array you created in exercise 5, create a for loop that iterates through this array 
+and console logs the following message:
 
 "The location at i is:  ."  and append the value of i and the value stored within the Array at that index to this string.
 
 i.e. "The locaton at 0 is Tokyo."*/
 
+for(var i=0; i<japanPrefectures.length; i++){
+  console.log ("The location at " + [i] + " is " + japanPrefectures[i] + ".");
+}
+
+
 /*19. Declare a variable named "oddNumbers".
-Use a for loop to add only odd numbers to an Array.  Add 30 odd numbers to the oddNumbers variable starting with the value of 1.*/
+Use a for loop to add only odd numbers to an Array.  Add 30 odd numbers to the oddNumbers variable starting with the value 
+of 1.*/
+
+var oddNumbers = [];
+
+for(var i=0; i<35; i++){
+  if(i %1 === 0);
+  oddNumbers.push([i]);
+}
+
+console.log(oddNumbers);
 
 /*20.  Declare a function named "oldEnough".
-This function takes in a number parameter age and returns a Boolean value true or false if the age is lower than the minimum legal drinking age in Antigua.
+This function takes in a number parameter age and returns a Boolean value true or false if the age is lower than the 
+minimum legal drinking age in Antigua.
 
-Invoke this function by passing in a number value.  Google search Antigua's minimum drinking age to confirm the number value.  Store the return value to a variable named drinkinAlready and console log this variable*/
+Invoke this function by passing in a number value.  Google search Antigua's minimum drinking age to confirm the number value.  
+Store the return value to a variable named drinkinAlready and console log this variable*/
 
 /*21. Declare a function named fightDaPower.
-This function checks the value stored at the drinkinAlready variable in the previous exercise and if the value is true, return the string "I'm jumping on the next flight to Antigua." Otherwise return the string "I can't wait to be in the 5th grade!"  Console log the result.*/ 
+This function checks the value stored at the drinkinAlready variable in the previous exercise and if the value is true, return 
+the string "I'm jumping on the next flight to Antigua." Otherwise return the string "I can't wait to be in the 5th grade!"  
+Console log the result.*/ 
 
-/*22. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in exercise 10.  Console log the result.*/
+/*22. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop 
+that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in 
+exercise 10.  Console log the result.*/
 
-/*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
+/*23.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string 
+parameter being passed in and return the string in reverse order.*/
 
 /*24.  Using DOM, create the follow HTML layout:
 
