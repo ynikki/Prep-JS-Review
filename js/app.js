@@ -296,10 +296,11 @@ that will put 5 random numbers between the values of 0 to 20 in the contents arr
 exercise 10.  Console log the result.*/
 
 function contentFiller(){
-  for(var i=0; i<20; i++){
-    bigBox.contents.push([i]);
+  for(var i=0; i<5; i++){
+    var fiveRandomNum = Math.floor(Math.random() * 20);
+    bigBox.contents.push(fiveRandomNum);
   }
-  return bigBox.size;
+  return bigBox.contents;
 }
 
 console.log(contentFiller([i])); 
